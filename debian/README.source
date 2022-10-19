@@ -1,0 +1,29 @@
+General info
+============
+
+The upstream sources are at:
+
+https://github.com/DefinitelyTyped/DefinitelyTyped
+
+However this isn't directly published to NPM. Instead, they have some scripts
+to auto-generate package.json for each package etc:
+
+https://github.com/Microsoft/types-publisher
+
+The extra data generated is both small and human-readable, so trying to package
+this generator would really be a waste of effort for Debian. Therefore, the
+get-orig-source.sh shell script just downloads the NPM packages and extracts
+them directly.
+
+Updating checklist
+==================
+
+- Check that "small and human-readable" still holds for the imported packages.
+  If not, we will have to figure out a proper solution for Debian.
+
+  In particular, check that they don't e.g. start bundling pre-built javascript
+  into this package; `find . -type f -name '*.js'` should output nothing.
+
+- Update d/control with the new contents of packages.list.
+
+- Run `grep license */package.json` and update d/copyright as necessary.

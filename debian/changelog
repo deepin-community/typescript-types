@@ -1,0 +1,224 @@
+typescript-types (20210110-3) unstable; urgency=medium
+
+  * Team upload
+  * Replace transitional target from nodejs ≥ 12.20 to node-types-node
+
+ -- Xavier Guimard <yadd@debian.org>  Fri, 29 Jan 2021 06:25:45 +0100
+
+typescript-types (20210110-2) unstable; urgency=medium
+
+  * Team upload
+  * Remove all installed files: now node-typescript-types is a transitional
+    package
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 11 Jan 2021 11:40:20 +0100
+
+typescript-types (20210110-1) unstable; urgency=medium
+
+  * Team upload
+  * Remove @types/node, provided by node 12.20.1~dfsg-1 (Closes: #979693)
+  * New upstream version 20210110
+
+ -- Xavier Guimard <yadd@debian.org>  Sun, 10 Jan 2021 10:19:52 +0100
+
+typescript-types (20201201-2) unstable; urgency=medium
+
+  * stop install module @types/estree
+    or provide package node-types-estree
+    (now provided by node-eslint-visitor-keys)
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sat, 02 Jan 2021 05:36:34 +0100
+
+typescript-types (20201201-1) unstable; urgency=medium
+
+  * Team upload
+  * Remove @types/marked (embedded in node-marked) and @types/mathjax
+    (useless and does not match with current libjs-mathjax)
+  * New upstream version 20201201
+  * Declare compliance with policy 4.5.1
+
+ -- Xavier Guimard <yadd@debian.org>  Tue, 01 Dec 2020 10:45:04 +0100
+
+typescript-types (20201122-3) unstable; urgency=medium
+
+  * use section oldlibs (not javascript);
+    rewrite long description to target users
+    (not package maintainers),
+    to update list of provided types,
+    and provide a deprecation notice
+    and refer to corresponding Nodejs packages
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 01 Dec 2020 00:14:33 +0100
+
+typescript-types (20201122-2) unstable; urgency=medium
+
+  * provide virtual packages
+    node-types-backbone node-types-estree node-types-marked
+    node-types-mathjax node-types-node;
+    build-depend on jq
+
+ -- Jonas Smedegaard <dr@jones.dk>  Mon, 30 Nov 2020 23:51:43 +0100
+
+typescript-types (20201122-1) unstable; urgency=medium
+
+  * Team upload
+  * Remove @types/{jsdom,requirejs,sizzle}, provided by related packages
+  * New upstream version 20201122
+
+ -- Xavier Guimard <yadd@debian.org>  Sun, 22 Nov 2020 09:46:46 +0100
+
+typescript-types (20201117-1) unstable; urgency=medium
+
+  * Team upload
+  * Remove @types/shelljs and @types/underscore, unused in Debian
+    (according to https://codesearch.debian.net)
+  * Remove @types/lodash and @types/semver, provided by related modules
+  * New upstream version 20201117
+
+ -- Xavier Guimard <yadd@debian.org>  Tue, 17 Nov 2020 09:41:54 +0100
+
+typescript-types (20201111-1) unstable; urgency=medium
+
+  * Team upload
+  * Remove @types/{handlebars,highlight.js,minimist,sax}
+  * New upstream version 20201111
+
+ -- Xavier Guimard <yadd@debian.org>  Wed, 11 Nov 2020 14:49:44 +0100
+
+typescript-types (20201105-1) unstable; urgency=medium
+
+  * Team upload
+  * Remove @types/{micromatch,minimatch,jquery,chai,expect.js,glob} provided
+    by related modules
+  * New upstream version 20201105 (updates @types/lodash and @types/jsdom)
+  * Fix copyright
+
+ -- Xavier Guimard <yadd@debian.org>  Thu, 05 Nov 2020 10:58:29 +0100
+
+typescript-types (20201003-1) unstable; urgency=medium
+
+  * Team upload
+  * Remove @types/mocha, provided by mocha itself
+  * New upstream version 20201003
+
+ -- Xavier Guimard <yadd@debian.org>  Sat, 03 Oct 2020 11:37:27 +0200
+
+typescript-types (20200907-1) unstable; urgency=medium
+
+  * Team upload
+  * Remove @types/sinon, provided by node-sinon
+  * New upstream version 20200907
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 07 Sep 2020 01:48:53 +0200
+
+typescript-types (20200808-1) unstable; urgency=medium
+
+  * Team upload
+  * Fix @types/node version (Closes: #964637)
+  * New upstream version 20200808
+
+ -- Xavier Guimard <yadd@debian.org>  Sat, 08 Aug 2020 15:41:33 +0200
+
+typescript-types (20200626-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Nilesh Patra ]
+  * Update version changes in control
+
+  [ Xavier Guimard ]
+  * Remove jest, provided by related packages
+  * New upstream version 20200626
+
+ -- Xavier Guimard <yadd@debian.org>  Fri, 26 Jun 2020 09:33:07 +0200
+
+typescript-types (20200219-1) unstable; urgency=medium
+
+  * Team upload
+  * Back to unstable (Closes: #952486)
+  * Declare compliance with policy 4.4.1
+  * Change section to javascript
+  * Add upstream/metadata
+  * Add @types/sax 1.2.0
+  * Add @types/jest 25.1.2
+  * New upstream version 20200219
+  * Bump debhelper compatibility level to 12
+  * Declare compliance with policy 4.5.0
+
+ -- Xavier Guimard <yadd@debian.org>  Thu, 12 Mar 2020 22:42:16 +0100
+
+typescript-types (20191015-1) experimental; urgency=medium
+
+  * Team upload
+
+  [ Bastien Roucariès ]
+  * Break with older node-typescript
+  * Newer acorn provides types. Add breaks.
+
+  [ Pirate Praveen ]
+  * Add @types/micromatch 3.1.0
+  * New upstream version 20191015
+
+ -- Pirate Praveen <praveen@debian.org>  Tue, 15 Oct 2019 12:35:52 +0530
+
+typescript-types (20190926-2) unstable; urgency=medium
+
+  * Team upload
+  * Upload to unstable
+  * Breaks with older node-typescript
+
+ -- Bastien Roucariès <rouca@debian.org>  Mon, 30 Sep 2019 19:46:08 +0200
+
+typescript-types (20190926-1) experimental; urgency=medium
+
+  * Team upload.
+  * Add acorn 4.0.3
+  * Install in /usr/share/nodejs
+  * Bump standards version to 4.4.0
+
+ -- Pirate Praveen <praveen@debian.org>  Thu, 26 Sep 2019 23:14:01 +0530
+
+typescript-types (20190609-1) experimental; urgency=medium
+
+  * Team upload.
+  * Add glob, estree (Closes: #909427)
+
+ -- Pirate Praveen <praveen@debian.org>  Sun, 09 Jun 2019 20:27:24 +0530
+
+typescript-types (20190209-1) unstable; urgency=medium
+
+  * Add types for sizzle, jquery depends on it. (Closes: #921836)
+  * Also update types for node as part of this process.
+
+ -- Ximin Luo <infinity0@debian.org>  Sat, 09 Feb 2019 18:02:38 -0800
+
+typescript-types (20190203-1) unstable; urgency=medium
+
+  [ Upstream ]
+  * Update types for fs-extra, handlebars, highlight.js, jquery, jsdom,
+    lodash, marked, mathjax, minimatch, mocha, node, requirejs, semver,
+    shelljs, sinon, underscore.
+
+  [ Jonas Smedegaard ]
+  * Update git-buildpackage config: Enable signed tags.
+  * Add myself as uploader.
+  * Declare compliance with Debian Policy 4.3.0.
+  * Set Rules-Requires-Root: no.
+  * Update Vcs-* fields: Packaging moved to Salsa.
+  * Set package priority to optional (not obsolete extra).
+  * Update versions in long description.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sun, 03 Feb 2019 12:41:24 +0100
+
+typescript-types (20170519-1) unstable; urgency=medium
+
+  * Add types for chai, jsdom, needed for xterm.js.
+  * Update types for fs-extra, jquery, lodash, node, shelljs, sinon.
+
+ -- Ximin Luo <infinity0@debian.org>  Fri, 19 May 2017 20:04:38 +0200
+
+typescript-types (20170424-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #861130)
+
+ -- Ximin Luo <infinity0@debian.org>  Mon, 01 May 2017 15:38:03 +0200

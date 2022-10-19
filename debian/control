@@ -1,0 +1,25 @@
+Source: typescript-types
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders:
+ Jonas Smedegaard <dr@jones.dk>,
+ Ximin Luo <infinity0@debian.org>,
+Build-Depends:
+ debhelper-compat (= 13),
+Standards-Version: 4.5.1
+Section: oldlibs
+Homepage: https://definitelytyped.org/
+Vcs-Git: https://salsa.debian.org/js-team/typescript-types.git
+Vcs-Browser: https://salsa.debian.org/js-team/typescript-types
+Rules-Requires-Root: no
+
+Package: node-typescript-types
+Architecture: all
+Depends:
+ ${misc:Depends},
+ node-types-node
+Suggests:
+ node-typescript,
+Multi-Arch: foreign
+Description: Transitional package
+ This package is a transitional package, you can safely remove it
